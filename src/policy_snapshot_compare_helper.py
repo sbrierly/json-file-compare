@@ -1,6 +1,7 @@
-import json
 import logging
 from typing import Optional
+
+from deepdiff import DeepDiff
 
 from policy import Policy
 from snapshot import Snapshot
@@ -23,13 +24,12 @@ class PolicySnapshotCompareHelper:
                 and original_policy.path == revision_policy.path
             ):
                 logger.debug(f"Comparing policy: '{revision_policy.path}'...")
+                diff = DeepDiff(original_policy.content, revision_policy.content, ignore_order=True)
 
-                if original_policy.content != revision_policy.content:
+                if diff != {}:
                     logger.warning(f"Content mismatch for '{original_policy.path}'")
-                    logger.debug(
-                        f"\n\nOriginal:{json.dumps(original_policy.content)}"
-                        f"\n\nRevision:{json.dumps(revision_policy.content)}\n"
-                    )
+                    logger.debug(f"Diff:\n{diff.to_json(indent=2)}")
+
                 original_policy = next(self._original_snapshot.policies, None)
                 revision_policy = next(self._revision_snapshot.policies, None)
             else:

@@ -2,7 +2,7 @@ import logging
 
 from policy_snapshot_compare_helper import PolicySnapshotCompareHelper
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":

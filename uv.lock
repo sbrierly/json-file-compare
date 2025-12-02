@@ -3,40 +3,24 @@ revision = 3
 requires-python = "==3.9.*"
 
 [[package]]
-name = "boto3"
-version = "1.42.0"
-source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
-dependencies = [
-    { name = "botocore" },
-    { name = "jmespath" },
-    { name = "s3transfer" },
-]
-sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/boto3/1.42/boto3-1.42.0.tar.gz", hash = "sha256:9c67729a6112b7dced521ea70b0369fba138e89852b029a7876041cd1460c084" }
-wheels = [
-    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/boto3/1.42/boto3-1.42.0-py3-none-any.whl", hash = "sha256:af32b7f61dd6293cad728ec205bcb3611ab1bf7b7dbccfd0f2bd7b9c9af96039" },
-]
-
-[[package]]
-name = "botocore"
-version = "1.41.6"
-source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
-dependencies = [
-    { name = "jmespath" },
-    { name = "python-dateutil" },
-    { name = "urllib3" },
-]
-sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/botocore/1.41.6/botocore-1.41.6.tar.gz", hash = "sha256:08fe47e9b306f4436f5eaf6a02cb6d55c7745d13d2d093ce5d917d3ef3d3df75" }
-wheels = [
-    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/botocore/1.41.6/botocore-1.41.6-py3-none-any.whl", hash = "sha256:963cc946e885acb941c96e7d343cb6507b479812ca22566ceb3e9410d0588de0" },
-]
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
 sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/colorama/0.4.6/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44" }
 wheels = [
     { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/colorama/0.4.6/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6" },
+]
+
+[[package]]
+name = "deepdiff"
+version = "8.6.1"
+source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
+dependencies = [
+    { name = "orderly-set" },
+]
+sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/deepdiff/8.6.1/deepdiff-8.6.1.tar.gz", hash = "sha256:ec56d7a769ca80891b5200ec7bd41eec300ced91ebcc7797b41eb2b3f3ff643a" }
+wheels = [
+    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/deepdiff/8.6.1/deepdiff-8.6.1-py3-none-any.whl", hash = "sha256:ee8708a7f7d37fb273a541fa24ad010ed484192cd0c4ffc0fa0ed5e2d4b9e78b" },
 ]
 
 [[package]]
@@ -61,12 +45,12 @@ wheels = [
 ]
 
 [[package]]
-name = "jmespath"
-version = "1.0.1"
+name = "orderly-set"
+version = "5.5.0"
 source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
-sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/jmespath/1.0.1/jmespath-1.0.1.tar.gz", hash = "sha256:90261b206d6defd58fdd5e85f478bf633a2901798906be2ad389150c5c60edbe" }
+sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/orderly-set/5.5/orderly_set-5.5.0.tar.gz", hash = "sha256:e87185c8e4d8afa64e7f8160ee2c542a475b738bc891dc3f58102e654125e6ce" }
 wheels = [
-    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/jmespath/1.0.1/jmespath-1.0.1-py3-none-any.whl", hash = "sha256:02e2e4cc71b5bcab88332eebf907519190dd9e6e82107fa7f83b1003a6252980" },
+    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/orderly-set/5.5/orderly_set-5.5.0-py3-none-any.whl", hash = "sha256:46f0b801948e98f427b412fcabb831677194c05c3b699b80de260374baa0b1e7" },
 ]
 
 [[package]]
@@ -115,35 +99,11 @@ wheels = [
 ]
 
 [[package]]
-name = "python-dateutil"
-version = "2.9.0.post0"
-source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
-dependencies = [
-    { name = "six" },
-]
-sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/python-dateutil/2.9.post0/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3" }
-wheels = [
-    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/python-dateutil/2.9.post0/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427" },
-]
-
-[[package]]
-name = "s3transfer"
-version = "0.16.0"
-source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
-dependencies = [
-    { name = "botocore" },
-]
-sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/s3transfer/0.16/s3transfer-0.16.0.tar.gz", hash = "sha256:8e990f13268025792229cd52fa10cb7163744bf56e719e0b9cb925ab79abf920" }
-wheels = [
-    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/s3transfer/0.16/s3transfer-0.16.0-py3-none-any.whl", hash = "sha256:18e25d66fed509e3868dc1572b3f427ff947dd2c56f844a5bf09481ad3f3b2fe" },
-]
-
-[[package]]
 name = "scripts"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "boto3" },
+    { name = "deepdiff" },
 ]
 
 [package.dev-dependencies]
@@ -152,19 +112,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "boto3", specifier = ">=1.41.4" }]
+requires-dist = [{ name = "deepdiff", specifier = ">=8.6.1" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=8.4.2" }]
-
-[[package]]
-name = "six"
-version = "1.17.0"
-source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
-sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/six/1.17/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81" }
-wheels = [
-    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/six/1.17/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274" },
-]
 
 [[package]]
 name = "tomli"
@@ -182,13 +133,4 @@ source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_pac
 sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/typing-extensions/4.15/typing_extensions-4.15.0.tar.gz", hash = "sha256:0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466" }
 wheels = [
     { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/typing-extensions/4.15/typing_extensions-4.15.0-py3-none-any.whl", hash = "sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548" },
-]
-
-[[package]]
-name = "urllib3"
-version = "1.26.20"
-source = { registry = "https://pkgs.dev.azure.com/devopsmapfre/devopsmapfre/_packaging/releases/pypi/simple" }
-sdist = { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/urllib3/1.26.20/urllib3-1.26.20.tar.gz", hash = "sha256:40c2dc0c681e47eb8f90e7e27bf6ff7df2e677421fd46756da1161c39ca70d32" }
-wheels = [
-    { url = "https://pkgs.dev.azure.com/devopsmapfre/5951d05f-6c0b-4d32-ab72-ac8679a1a5a1/_packaging/64334f2b-b59a-40a1-9d05-0b78cbf35944/pypi/download/urllib3/1.26.20/urllib3-1.26.20-py2.py3-none-any.whl", hash = "sha256:0ed14ccfbf1c30a9072c7ca157e4319b70d65f623e91e7b32fadb2853431016e" },
 ]
